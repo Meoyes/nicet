@@ -17,8 +17,8 @@ jobs:
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: YOUR_ACCOUNT_ID
-          projectName: YOUR_PROJECT_NAME
+          accountId: 17bfbf3d2e8ad7dd05c2a0216ea48062
+          projectName: nicet
           directory: YOUR_BUILD_OUTPUT_DIRECTORY
           # Optional: Enable this if you want to have GitHub Deployments triggered
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
@@ -26,6 +26,6 @@ jobs:
           # By default this will be the branch which triggered this workflow
           branch: main
           # Optional: Change the working directory
-          workingDirectory: my-site
+          workingDirectory: ./static
           # Optional: Change the Wrangler version, allows you to point to a specific version or a tag such as `beta`
           wranglerVersion: '3'
