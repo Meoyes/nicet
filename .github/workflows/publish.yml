@@ -17,7 +17,7 @@ jobs:
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: 17bfbf3d2e8ad7dd05c2a0216ea48062
+          accountId: ${{ secrets.CLOUDFLARE_ACC_ID }}
           projectName: nicet
           directory: ./static
           # Optional: Enable this if you want to have GitHub Deployments triggered
